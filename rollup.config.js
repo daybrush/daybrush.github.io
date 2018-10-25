@@ -21,7 +21,7 @@ const uglifyCode = uglify({
       var type = comment.type;
       if (type === "comment2") {
         // multiline comment
-        return /daybrush\.github\.io/.test(text);
+        return /daybrush\.com/.test(text);
       }
     },
   },
