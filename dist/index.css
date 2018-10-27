@@ -306,7 +306,9 @@ h3 {
 	content: "";
 }
 .page.works {
-	min-height: 1000px;
+	/* height: 70%; */
+	height: 100%;
+	min-height: 600px;
 }
 .page.works .container {
 	height: 100%;
@@ -317,29 +319,15 @@ h3 {
 }
 .page.works .container.container1 {
 	right: 50%;
-	background: #eee;
 }
 .page.works .container.container2 {
 	left: 50%;
 }
-@media screen and (max-width: 800px) {
-	.page.works .container {
-		width: 100%;
-		height: 50%;
-	}
-	.page.works .container.container1 {
-		right: 0;
-	}
-	.page.works .container.container2 {
-		left: 0;
-		top: 50%;
-	}
-}
-.page.works .container.container1:hover {
-	background: inherit;
-}
-.page.works .container.container1:hover+.container2 {
+.page.works .container {
 	background: #eee;
+}
+.page.works .container:hover {
+	background: #f5f5f5;
 }
 .page.works .work {
 	position: absolute;
@@ -348,10 +336,10 @@ h3 {
 	width: 90%;
 	max-width: 400px;
 	transform: translate(-50%, -50%);
-	/* transition: transform ease 0.3s; */
+	transition: transform ease 0.3s;
 }
 .page.works .container:hover .work {
-	/* transform: translate(-50%, -50%) scale(1.1); */
+	transform: translate(-50%, -50%) scale(1.1);
 }
 .page.works h3 {
 	font-size: 40px;
@@ -480,10 +468,13 @@ h3 {
 	position: absolute;
 	left: 50%;
 	margin-left: 3px;
-	bottom: 7%;
-	transform: translate(-50%, -50%);
+	bottom: 0%;
+	top: 38%;
+	left: 2%;
+	right: 0%;
+	margin: auto;
 	width: 32px;
-	/* 	overflow: hidden; */
+	height: 32px;
 }
 .clapper .play svg {
 	-webkit-backface-visibility: hidden;
@@ -568,9 +559,12 @@ h3 {
   margin: 0px;
 }
 @media screen and (max-width: 800px) {
+  .page.works {
+    min-height: 1000px;
+  }
 	.page.works .container {
 		width: 100%;
-		height: 50%;
+    height: 50%;
 	}
 	.page.works .container.container1 {
 		right: 0;
