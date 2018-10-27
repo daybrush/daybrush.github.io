@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/daybrush/daybrush.github.io#readme",
   "dependencies": {
-    "@daybrush/utils": "0.0.5",
+    "@daybrush/utils": "^0.1.1",
     "scenejs": "^1.0.0-beta11",
     "shape-svg": "^0.1.0"
   },
