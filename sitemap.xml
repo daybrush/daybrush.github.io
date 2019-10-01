@@ -9,118 +9,158 @@
 
 <url>
   <loc>https://daybrush.com/</loc>
-  <lastmod>2019-04-12T16:06:29+00:00</lastmod>
+  <lastmod>2019-10-01T17:52:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://daybrush.com/scenejs/</loc>
-  <lastmod>2019-06-20T16:06:29+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://daybrush.com/scenejs/release/latest/doc/</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <loc>https://daybrush.com/moveable/</loc>
+  <lastmod>2019-10-01T17:28:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://daybrush.com/scenejs/release/latest/doc/index.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <loc>https://daybrush.com/scenejs/</loc>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://daybrush.com/scenejs/release/latest/doc/</loc>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://daybrush.com/moveable/release/latest/doc/</loc>
+  <lastmod>2019-10-01T17:28:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/features.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://daybrush.com/scenejs/release/latest/doc/index.html</loc>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/Scene.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/Animator.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/EventTrigger.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/Frame.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/PropertyObject.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/SceneItem.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/easing.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/global.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://daybrush.com/scenejs/</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://daybrush.com/moveable/release/latest/doc/index.html</loc>
+  <lastmod>2019-10-01T17:28:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://daybrush.com/moveable/release/latest/doc/Moveable.html</loc>
+  <lastmod>2019-10-01T17:28:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://daybrush.com/moveable/release/latest/doc/eg.Component.html</loc>
+  <lastmod>2019-10-01T17:28:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://daybrush.com/moveable/release/latest/doc/global.html</loc>
+  <lastmod>2019-10-01T17:28:14+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/Scene.ts.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/consts.ts.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/Animator.ts.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/EventTrigger.ts.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/Frame.ts.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/PropertyObject.ts.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/SceneItem.ts.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/easing.ts.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://daybrush.com/scenejs/release/latest/doc/types.ts.html</loc>
-  <lastmod>2019-05-31T01:29:42+00:00</lastmod>
+  <lastmod>2019-07-10T01:16:49+00:00</lastmod>
   <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://daybrush.com/moveable/release/latest/doc/src_Moveable.tsx.html</loc>
+  <lastmod>2019-10-01T17:28:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://daybrush.com/moveable/release/latest/doc/src_types.ts.html</loc>
+  <lastmod>2019-10-01T17:28:14+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://daybrush.com/moveable/release/latest/doc/node_modules_react-moveable_src_react-moveable_types.ts.html</loc>
+  <lastmod>2019-10-01T17:28:14+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 
 
