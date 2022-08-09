@@ -1,5 +1,6 @@
 import builder from "@daybrush/builder";
 import cssbundle from "rollup-plugin-css-bundle";
+import scss from 'rollup-plugin-scss'
 
 
 
@@ -9,7 +10,10 @@ export default builder([
         output: "./dist/index.js",
         format: "iife",
         exports: "named",
-        plugins: [cssbundle({output: "./dist/index.css"})],
+        plugins: [scss({
+            output: true,
+            output: './dist/index.css',
+        })],
         resolve: true,
         // uglify: true,
     },

@@ -1,286 +1,100 @@
-import { $ } from "./utils";
-import { star, poly } from "shape-svg";
-import Scene, { EASE_IN, EASE_OUT } from "scenejs";
+import Scene from "scenejs";
 
-$(".star5").appendChild(star({side: 5, width: 50, stroke: "#ccc", strokeWidth: 2}));
-$(".polygon6").appendChild(poly({side: 6, width: 50, stroke: "#ccc", strokeWidth: 2}));
-$(".triangle").appendChild(poly({side: 3, width: 50, stroke: "#ccc", strokeWidth: 2}));
+// new Scene({
+//   ".dot.left": {
+//      0: {
+//        transform: "translate(-50%, -50%) rotate(0deg) translate2(0px, 30px) rotate2(0deg) translate3(0px, -30px)",
+//      },
+//      2: {
+//        transform: "translate(-50%, -50%) rotate(360deg) translate2(0px, 30px) rotate2(360deg) translate3(0px, -30px)",
+//      },
+//   },
+//   ".dot.right": {
+//      0: {
+//        transform: "translate(-50%, -50%) rotate(0deg) translate2(0px, -30px) rotate2(0deg) translate3(0px, 30px)",
+//      },
+//      2: {
+//        transform: "translate(-50%, -50%) rotate(360deg) translate2(0px, -30px) rotate2(360deg) translate3(0px, 30px)",
+//      },
+//     2.5: {},
+//   },
+// }, {
+//   selector: true,
+//   easing: "ease-out",
+//   iterationCount: "infinite",
+// }).play();
 
-const characterKeyframes = {
-  0: {
-    transform: "translate(-100%)",
-  },
-  1: {
-    transform: "translate(0%)",
-  },
-};
-const mainScene = new Scene({
-  ".page.main .line-top": {
-    0: {
-      transform: "translateY(-100%) scaleY(1)",
-    },
-    1: {
-      transform: "translateY(0%) scaleY(0)",
-    },
-    options: {
-      easing: EASE_IN,
-    },
-  },
-  ".page.main .circle1": {
-    0: {
-      "border-width": "100px",
-      "transform": "scale(0)",
-    },
-    0.9: {
-      opacity: 1,
-    },
-    1: {
-      "border-width": "0px",
-      "transform": "scale(1)",
-      "opacity": 0,
-    },
-    options: {
-      delay: 1,
-    },
-  },
-  ".page.main .circle2": {
-    0: {
-      "border-width": "200px",
-      "transform": "scale(0)",
-    },
-    0.3: {
-      opacity: 1,
-    },
-    0.9: {
-      "border-width": "0px",
-      "transform": "scale(1)",
-      "opacity": 0,
-    },
-    2: 1,
-    options: {
-      delay: 1.6,
-    },
-  },
-  ".page.main .rectangle": {
-    0: {
-      opacity: 0,
-      transform: "translate(-50%, -50%) rotate(30deg) translate2(0px) scale(0.3)",
-    },
-    0.1: {
-      opacity: 1,
-    },
-    1: {
-      opacity: 1,
-    },
-    1.5: {
-      transform: "rotate(0deg) translate2(-100px) scale(1)",
-      opacity: 0,
-    },
-    options: {
-      delay: 2,
-    },
-  },
-  ".page.main .star5": {
-    0: {
-      opacity: 0,
-      transform: "translate(-50%, -50%) translate2(0px, 0px) rotate(0deg) scale(0.3)",
-    },
-    0.1: {
-      opacity: 1,
-    },
-    1: {
-      opacity: 1,
-    },
-    1.5: {
-      transform: "rotate(150deg) translate2(-5px, -98px) scale(1)",
-      opacity: 0,
-    },
-    options: {
-      delay: 2,
-    },
-  },
-  ".page.main .circle3": {
-    0: {
-      opacity: 0,
-      transform: "translate(-50%, -50%) translate2(0px, 0px) rotate(0deg) scale(0.3)",
-    },
-    0.1: {
-      opacity: 1,
-    },
-    1: {
-      opacity: 1,
-    },
-    1.5: {
-      transform: "rotate(150deg) translate2(95px, -40px) scale(1)",
-      opacity: 0,
-    },
-    options: {
-      delay: 2,
-    },
-  },
-  ".page.main .polygon6": {
-    0: {
-      opacity: 0,
-      transform: "translate(-50%, -50%) translate2(0px, 0px) rotate(0deg) scale(0.3)",
-    },
-    0.1: {
-      opacity: 1,
-    },
-    1: {
-      opacity: 1,
-    },
-    1.5: {
-      transform: "rotate(150deg) translate2(75px, 75px) scale(1)",
-      opacity: 0,
-    },
-    options: {
-      delay: 2,
-    },
-  },
-  ".page.main .triangle": {
-    0: {
-      opacity: 0,
-      transform: "translate(-50%, -50%) translate2(0px, 0px) rotate(0deg) scale(0.3)",
-    },
-    0.1: {
-      opacity: 1,
-    },
-    1: {
-      opacity: 1,
-    },
-    1.5: {
-      transform: "rotate(-150deg) translate2(-40px, 90px) scale(1)",
-      opacity: 0,
-    },
-    options: {
-      delay: 2,
-    },
-  },
-  ".page.main .character.d .back1": {
-    0: {
-      transform: "scaleX(0)",
-    },
-    1: {
-      transform: "scaleX(1)",
-    },
-    options: {
-      delay: 2.8,
-    },
-  },
-  ".page.main .character.d .back2": {
-    0: {
-      transform: "scaleX(0)",
-    },
-    1: {
-      transform: "scaleX(1)",
-    },
-    options: {
-      delay: 3,
-    },
-  },
-  ".page.main .character.d span": {
-    keyframes: characterKeyframes,
-    options: {
-      delay: 3.1,
-    },
-  },
-  ".page.main .character.a span": {
-    keyframes: characterKeyframes,
-    options: {
-      delay: 3.3,
-    },
-  },
-  ".page.main .character.y span": {
-    keyframes: characterKeyframes,
-    options: {
-      delay: 3.5,
-    },
-  },
-  ".page.main .character.b span": {
-    keyframes: characterKeyframes,
-    options: {
-      delay: 3.7,
-    },
-  },
-  ".page.main .character.r span": {
-    keyframes: characterKeyframes,
-    options: {
-      delay: 3.9,
-    },
-  },
-  ".page.main .character.u span": {
-    keyframes: characterKeyframes,
-    options: {
-      delay: 4.1,
-    },
-  },
-  ".page.main .character.s span": {
-    keyframes: characterKeyframes,
-    options: {
-      delay: 4.3,
-    },
-  },
-  ".page.main .character.h span": {
-    keyframes: characterKeyframes,
-    options: {
-      delay: 4.5,
-    },
-  },
-}, {
-  easing: EASE_OUT,
-  selector: true,
-  iterationCount: 1,
-});
-
-for (let i = 1; i <= 8; ++i) {
-  mainScene.newItem(".glitter" + i, {selector: true}).set({
-    0: {
-      width: "0px",
-      transform: {
-        rotate: (360 / 8 * i) + "deg",
-        translate: "0px",
-        scaleX: 1,
-      },
-      opacity: 0,
-    },
-    0.5: {
-      width: "50px",
-      opacity: 1,
-    },
-    1: {
-      width: "0px",
-      transform: {
-        translate: "100px",
-        scaleX: 0,
-      },
-      opacity: 0,
-    },
-    options: {
-      delay: 1,
-    },
-  });
+const xs = [];
+for (let i = 0; i < 20; ++i) {
+  xs.push(`<div class="x"style="left: ${(i % 5 * 15 + 20)}%;top: ${Math.floor(i / 5) * 20 + 20}%"></div>`);
 }
+document.querySelector("#scene1").innerHTML = xs.join("");
 
-const wheelScene = new Scene({
-  ".page.main .scroll-wheel": {
-    0: {
-      opacity: 0,
-      transform: "translateY(0px)",
-    },
-    0.1: {
-      opacity: 1,
-    },
-    0.9: {
-      opacity: 1,
-    },
-    1: {
-      opacity: 0,
-      transform: "translateY(30px)",
-    },
+// new Scene({
+//   ".x": i => {
+//     const startTime = Math.floor(i / 5) * 0.1 + (i % 5) * 0.1;
+
+//     return {
+//       [startTime]: {
+//         transform: "translate(-50%, -50%) translateX(0px) rotate(0deg)",
+//         opacity: 1,
+//       },
+//       [startTime + 0.7]: {
+//         transform: "translate(-50%, -50%) translateX(20px) rotate(180deg)",
+//         opacity: 0,
+//       },
+//       2: {},
+//     };
+//   },
+// }, {
+//   iterationCount: "infinite",
+//   easing: "ease-in-out",
+//   selector: true,
+// }).play();
+
+
+
+
+new Scene({
+  "#scene2 .vertical.line": i => {
+    const startTime = i * 0.2;
+
+    return {
+      [startTime]: {
+        transform: "translate(-50%) translateY(-110%)",
+      },
+      [startTime + 1.2]: {
+        transform: "translate(-50%) translateY(0%)",
+      },
+      2: {},
+    };
+  },
+    "#scene2 .horizontal.line": i => {
+    const startTime = i * 0.2;
+
+    return {
+      [startTime]: {
+        transform: "translateY(-50%) translateX(-110%)",
+      },
+      [startTime + 2]: {
+        transform: "translateY(-50%) translateX(0%)",
+      },
+    };
+  },
+  "#scene2 .column .background": i => {
+    const startTime = i * 0.4 + 0.4;
+
+    return {
+      [startTime]: {
+        transform: "translate(-100%)",
+      },
+      [startTime + 1]: {
+        transform: "translate(-0%)",
+      },
+    };
   },
 }, {
   iterationCount: "infinite",
+  easing: "ease-in-out",
   selector: true,
-});
-
-export {mainScene, wheelScene};
+}).play();
