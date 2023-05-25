@@ -1,8 +1,9 @@
-<script>
-  import { useScene, EASE_IN_OUT, selectorAll } from "svelte-scenejs";
+<script lang="ts">
+  import { useScene, EASE_IN_OUT, selectorAll, type SvelteSceneResult } from "svelte-scenejs";
+  import { Poly } from "svelte-figur";
   import { zoomIn } from "@scenejs/effects";
 
-  const scene = useScene(
+  export const scene = useScene(
     {
       ".clapper": {
         2: "transform: translate(-50%, -50%) rotate(0deg)",
@@ -67,7 +68,7 @@
             delay: 0.6 + i * 0.1,
           },
         }),
-        5
+        6
       ),
       ".stick2 .rect": selectorAll(
         (i) => ({
@@ -86,7 +87,7 @@
             delay: 0.8 + i * 0.1,
           },
         }),
-        5
+        6
       ),
     },
     {
@@ -96,38 +97,54 @@
   );
 </script>
 
-<div class="clapper">
-  <div class="clapper-container">
-    <div class="clapper-body">
-      <div class="top">
-        <div class="stick stick1">
-          <div class="rect" />
-          <div class="rect" />
-          <div class="rect" />
-          <div class="rect" />
-          <div class="rect" />
-          <div class="rect" />
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject x="0" y="0" width="300" height="300">
+    <div class="clapper">
+      <div class="clapper-container">
+        <div class="clapper-body">
+          <div class="top">
+            <div class="stick stick1">
+              <div class="rect" />
+              <div class="rect" />
+              <div class="rect" />
+              <div class="rect" />
+              <div class="rect" />
+              <div class="rect" />
+            </div>
+            <div class="stick stick2">
+              <div class="rect" />
+              <div class="rect" />
+              <div class="rect" />
+              <div class="rect" />
+              <div class="rect" />
+              <div class="rect" />
+            </div>
+          </div>
+          <div class="bottom" />
         </div>
-        <div class="stick stick2">
-          <div class="rect" />
-          <div class="rect" />
-          <div class="rect" />
-          <div class="rect" />
-          <div class="rect" />
-          <div class="rect" />
+        <div class="circle" />
+        <div class="play">
+          <Poly
+            strokeWidth={10}
+            left={5}
+            top={5}
+            right={5}
+            bottom={5}
+            width={50}
+            rotate={90}
+            fill="#333"
+            stroke="#333"
+          />
         </div>
       </div>
-      <div class="bottom" />
     </div>
-    <div class="circle" />
-    <div class="play" />
-  </div>
-</div>
+  </foreignObject>
+</svg>
 
 <style>
   .clapper {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
@@ -231,7 +248,7 @@
     position: absolute;
     left: 50%;
     margin-left: 3px;
-    bottom: 7%;
+    bottom: 9%;
     transform: translate(-50%, -50%);
     width: 32px;
     /* 	overflow: hidden; */

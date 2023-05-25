@@ -14,7 +14,7 @@
     },
     "homepage": "https://daybrush.com",
     "scripts": {
-        "dev": "vite dev",
+        "dev": "rm -rf node_modules/.vite && vite dev",
         "build": "vite build",
         "preview": "vite preview",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -33,11 +33,17 @@
         "vite": "^4.3.0"
     },
     "dependencies": {
+        "@daybrush/utils": "^1.11.0",
         "@scenejs/effects": "^1.0.2",
-        "shape-svg": "^0.4.0",
+        "html-to-image": "^1.11.11",
+        "svelte-figur": "^0.0.4",
         "svelte-guides": "^0.25.6",
         "svelte-infinite-viewer": "^0.24.5",
         "svelte-moveable": "^0.39.10",
-        "svelte-scenejs": "^1.0.0-beta.10"
+        "svelte-scenejs": "^1.0.0-beta.11"
+    },
+    "resolutions": {
+        "scenejs": "~1.10.2",
+        "@daybrush/utils": "^1.11.0"
     }
 }

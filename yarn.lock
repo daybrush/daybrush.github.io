@@ -2,13 +2,6 @@
 # yarn lockfile v1
 
 
-"@cfcs/core@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.npmjs.org/@cfcs/core/-/core-0.0.12.tgz#b06ad9b95d4a5316cd756b3b3128ad3e8c48d3ba"
-  integrity sha512-DqFagZYApByyx5xcQfG5dApxjAZzhr53biM8eB5sTXsZbTaIZ6E+MyocoeTAChg4GArM9qsRT0QWEtdbIDsJdA==
-  dependencies:
-    "@egjs/component" "^3.0.3"
-
 "@cfcs/core@^0.1.0", "@cfcs/core@~0.1.0":
   version "0.1.0"
   resolved "https://registry.npmjs.org/@cfcs/core/-/core-0.1.0.tgz#64346f7634b46de6e9b1d4c195743b9b8e603162"
@@ -40,7 +33,7 @@
   dependencies:
     "@egjs/list-differ" "^1.0.0"
 
-"@egjs/component@^3.0.3", "@egjs/component@^3.0.4":
+"@egjs/component@^3.0.4":
   version "3.0.4"
   resolved "https://registry.npmjs.org/@egjs/component/-/component-3.0.4.tgz#ad7b53794b2a612806179a188ad828acb9525f61"
   integrity sha512-sXA7bGbIeLF2OAw/vpka66c6QBBUPcA4UUhR4WGJfnp2XWdiI8QrnJGJMr/UxpE/xnevX9tN3jvNPlW8WkHl3g==
@@ -462,7 +455,7 @@ croact@^1.0.3:
     "@daybrush/utils" "^1.11.0"
     "@egjs/list-differ" "^1.0.0"
 
-css-styled@^1.0.0, css-styled@^1.0.6, css-styled@~1.0.6:
+css-styled@^1.0.6, css-styled@~1.0.6:
   version "1.0.6"
   resolved "https://registry.npmjs.org/css-styled/-/css-styled-1.0.6.tgz#294757217d165feb4af5c8b9416c230642ce02a8"
   integrity sha512-C5EOg7XwCA+b6D+F3eM36qevF+SIKahzIRfyt8Z+UugNnEMUKT2bRl/bu1a4P8Ilo/qY3Je5dRuanIMazy/tbA==
@@ -555,6 +548,13 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
+figur@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npmjs.org/figur/-/figur-0.0.3.tgz#d1159bc4334033dc57ef230a420615b6d7263f62"
+  integrity sha512-wDqNZt27++nudTqlmm3Z/U7vsBy0303wF751bpS/HxY7FTdaeGPlyp8lPhwp/dD9oI1HzUUqI2YxOpLbZXf1Ng==
+  dependencies:
+    "@daybrush/utils" "^1.10.2"
+
 fill-range@^7.0.1:
   version "7.0.1"
   resolved "https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
@@ -618,6 +618,11 @@ graceful-fs@^4.1.3:
   version "4.2.11"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
+
+html-to-image@^1.11.11:
+  version "1.11.11"
+  resolved "https://registry.npmjs.org/html-to-image/-/html-to-image-1.11.11.tgz#c0f8a34dc9e4b97b93ff7ea286eb8562642ebbea"
+  integrity sha512-9gux8QhvjRO/erSnDPv28noDZcPZmYE7e1vFsBLKLlRlKDSqNJYebj6Qz1TGd5lsRV+X+xYyjCKjuZdABinWjA==
 
 import-fresh@^3.2.1:
   version "3.3.0"
@@ -923,21 +928,10 @@ sander@^0.5.0:
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-scenejs@^1.0.0, scenejs@^1.1.0:
-  version "1.9.4"
-  resolved "https://registry.npmjs.org/scenejs/-/scenejs-1.9.4.tgz#b83565412ee8ee645d11a96eebe618f19601a859"
-  integrity sha512-/DajsY2fwaOgWKOPNV2nP/eE2+zF+q2tE4aYOSteg7JWrzHPXTXG1ds4Ah09nImznJ5rPnZOm1/gX451we2WvQ==
-  dependencies:
-    "@cfcs/core" "^0.0.12"
-    "@daybrush/utils" "^1.10.2"
-    "@scena/event-emitter" "^1.0.3"
-    css-styled "^1.0.0"
-    order-map "^0.2.2"
-
-scenejs@~1.10.1:
-  version "1.10.1"
-  resolved "https://registry.npmjs.org/scenejs/-/scenejs-1.10.1.tgz#00d7c5fba3e3cc3f7f3015e6da73c3f8f324bc25"
-  integrity sha512-+9W+eqZRSXp14Lw32K0vwUFRJFuwZS7caICjuX9dlF1n+nV8SMpNeqmgG6FHtvhQeQFxMHsGa28OqjcSUPLePg==
+scenejs@^1.0.0, scenejs@^1.1.0, scenejs@~1.10.2:
+  version "1.10.2"
+  resolved "https://registry.npmjs.org/scenejs/-/scenejs-1.10.2.tgz#4a185eb341677a816f71c39479ae423af5a67ead"
+  integrity sha512-5EfO8EzGLfZvyqU8I05dusVOD7UIVi5WI7l74r8fB+uqMWuCrGY/dOWaGG2LV4XzdyFXdyPVst+ojPh8LKPXmw==
   dependencies:
     "@cfcs/core" "^0.1.0"
     "@daybrush/utils" "^1.10.2"
@@ -949,14 +943,6 @@ set-cookie-parser@^2.6.0:
   version "2.6.0"
   resolved "https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.6.0.tgz#131921e50f62ff1a66a461d7d62d7b21d5d15a51"
   integrity sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==
-
-shape-svg@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/shape-svg/-/shape-svg-0.4.0.tgz#3ac3fd8329696f8e86ef23670259c37928101125"
-  integrity sha512-1YN5Fc5EqKIqU+D0XVmomo7X6iFPKd0+kCz6lwOQVvoRIlKFlH3WBQkc3qyjM2klHSmAIlWcw9PAB3If/mAb7A==
-  dependencies:
-    "@daybrush/utils" "^1.10.2"
-    tslib "^2.4.1"
 
 sirv@^2.0.2:
   version "2.0.3"
@@ -1008,6 +994,14 @@ svelte-check@^3.0.1:
     svelte-preprocess "^5.0.3"
     typescript "^5.0.3"
 
+svelte-figur@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npmjs.org/svelte-figur/-/svelte-figur-0.0.4.tgz#c48f7dc7cf3881bf6892443ed7a616bcbc7bef8f"
+  integrity sha512-6XV1ruVHaNhgwerzM2UzGG4FbVuIlrj1OYQ/Hkb3/LTNs02vRjvhXDRYmrH76tFCENsdgg5heJXVp4cBH1xL+A==
+  dependencies:
+    "@daybrush/utils" "^1.10.2"
+    figur "~0.0.3"
+
 svelte-guides@^0.25.6:
   version "0.25.6"
   resolved "https://registry.npmjs.org/svelte-guides/-/svelte-guides-0.25.6.tgz#02229652ce41a8201ca6bf3ec98ddc0e9180bbfa"
@@ -1046,13 +1040,13 @@ svelte-preprocess@^5.0.3:
     sorcery "^0.11.0"
     strip-indent "^3.0.0"
 
-svelte-scenejs@^1.0.0-beta.10:
-  version "1.0.0-beta.10"
-  resolved "https://registry.npmjs.org/svelte-scenejs/-/svelte-scenejs-1.0.0-beta.10.tgz#f54b2ac77e9ebefd1ab6c2e7ae5b46709dac68d4"
-  integrity sha512-p83RePGkhy8m9vdo3U12/7gepXHh1Z6rOia6+7GlQxvlNfPaW6c88JwCcyF5egssORUkjOVuG2jfwx1ikUPoWg==
+svelte-scenejs@^1.0.0-beta.11:
+  version "1.0.0-beta.11"
+  resolved "https://registry.npmjs.org/svelte-scenejs/-/svelte-scenejs-1.0.0-beta.11.tgz#40c07a4e7523d3945770fd7929f742e504ded042"
+  integrity sha512-YqSpWmf77rhcb/mXLJxIv07Xl+AdK0IXumlo3PH8FuieE0Fui/SzQJ3W5qc+n7lZNZ4RnRx7RObtiE7KD938Ew==
   dependencies:
     "@cfcs/svelte" "^0.1.0"
-    scenejs "~1.10.1"
+    scenejs "~1.10.2"
 
 svelte@^3.54.0:
   version "3.59.1"

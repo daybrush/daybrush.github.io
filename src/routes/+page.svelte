@@ -1,13 +1,13 @@
 <script>
-  import Projects from "./Projects.svelte";
+  import ScenaProjectsPage from "$lib/pages/ScenaProjectsPage.svelte";
 </script>
 
 <div class="page">
   <div class="banner" role="banner">
     <div class="characters nick" aria-label="Daybrush">
       <div class="character invert">
-        <div class="d-back back1"></div>
-        <div class="d-back back2"></div>
+        <div class="d-back back1" />
+        <div class="d-back back2" />
         <span>D</span>
       </div>
       <div class="character a">
@@ -40,8 +40,8 @@
     <div class="column-characters">
       <div class="characters column" aria-label="CHOI" role="banner">
         <div class="character invert">
-          <div class="d-back back1"></div>
-          <div class="d-back back2"></div>
+          <div class="d-back back1" />
+          <div class="d-back back2" />
           <span>C</span>
         </div>
         <div class="character">
@@ -82,8 +82,8 @@
 
       <div class="characters hanguel column" aria-label="최연규">
         <div class="character invert">
-          <div class="d-back back1"></div>
-          <div class="d-back back2"></div>
+          <div class="d-back back1" />
+          <div class="d-back back2" />
           <span>최</span>
         </div>
         <div class="character a">
@@ -94,32 +94,30 @@
         </div>
         <div class="character">
           <div class="diagonals">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
+            <div class="line" />
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<ScenaProjectsPage />
 <div class="page">
-  <Projects />
   <div class="projects">
-    <div class="title">
-      These are my Github Projects.
-    </div>
+    <!-- <div class="title">These are my Github Projects.</div> -->
   </div>
 </div>
